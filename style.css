@@ -1,54 +1,60 @@
 body{
-    background-color: aliceblue;
+    background-color: whitesmoke;
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     height:100vh;
     justify-content: center;
     align-items: center;
 }
+
+h1{
+    margin-bottom: 500px;
+}
 .largebox{
-    width:400px;
+    width:50%;
+    margin: 0 auto;
     height:400px;
     background-color: white;
     /* border: 2px black solid; */
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .long{
-    width: 150px;
-    height:200px;
-    position: absolute;
-    border: 4px white solid;
-    PADDING:10PX;
+    width: 48%;
+    position: relative;
+    border: 5px white solid;
+    margin-bottom: 20px;
+    height:300px;
 
 }
+
 .long:first-child{
-    position: absolute;
     top: 0;
     left: 0;
     background-color: tomato;
 }
+
 .long:nth-child(2){
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color: teal;
 }
 .long:nth-child(3){
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    
     background-color: burlywood;
 }
 .long:last-child{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    
     background-color: thistle;
 }
+
 .inform{
     background-color: white;
-    height: 50px;
-    margin-top:20px;
-}
+    width: 100%;
+    top:20px;
+    position:abolute;
+    padding:0px 10px;
+    box-sizing: border-box;
+} 
